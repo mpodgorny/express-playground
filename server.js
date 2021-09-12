@@ -1,7 +1,7 @@
 const { default: axios } = require("axios");
 const express = require("express");
 const app = express();
-const port = 5000;
+var port = process.env.PORT || 8080;
 
 app.get("/*", (req, res) => {
   let parsedParam = "";
